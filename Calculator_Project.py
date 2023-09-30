@@ -14,22 +14,22 @@ def click(event):
     else:
         screen.set(screen.get() + text)
 
-codsoft = tk.Tk()
-codsoft.geometry("300x400")
-codsoft.maxsize(300,400)
-codsoft.minsize(300,400)
-codsoft.title("Calculator By Nishant Singh")
-codsoft.config(bg='#58667a')
+nishant = tk.Tk()
+nishant.geometry("300x400")
+nishant.maxsize(300,400)
+nishant.minsize(300,400)
+nishant.title("Calculator By Nishant Singh")
+nishant.config(bg='#58667a')
 
 
 screen = tk.StringVar()
 screen.set("")
 
-entry = tk.Entry(codsoft, textvar=screen, font="arial 20 bold")
+entry = tk.Entry(nishant, textvar=screen, font="arial 20 bold")
 entry.pack(fill=tk.BOTH, ipadx=8, padx=10, pady=10)
 entry["bg"] = "#58667a"
 
-button_frame = tk.Frame(codsoft)
+button_frame = tk.Frame(nishant)
 button_frame.config(bg="#58667a")
 button_frame.pack()
 
@@ -54,5 +54,5 @@ for button_text in buttons:
 
     button.bind("<Button-1>",click)
 
-codsoft.mainloop()
+nishant.mainloop()
 
